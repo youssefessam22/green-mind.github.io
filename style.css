@@ -1,4 +1,4 @@
-body {
+1body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -17,9 +17,9 @@ body {
 video {
     position: fixed;
     width: 105%;
-    height: 20%;
+    height: 1000%;
     right: -20;
-    top: 40px;
+    top: 90px;
 }
 
 .navbar {
