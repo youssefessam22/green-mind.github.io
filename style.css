@@ -19,7 +19,8 @@ video {
     width: 105%;
     height: 1000%;
     right: -20;
-    top: 90px;
+    bottom: 50px;
+    top: 0px;
 }
 
 .navbar {
