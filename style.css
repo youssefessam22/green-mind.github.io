@@ -62,7 +62,7 @@ video {
 
 .content h1 {
     position: fixed;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
     top: 70px;
     right: -0px;
@@ -72,7 +72,7 @@ video {
 
 button {
     position: fixed;
-    top: 700px;
+    top: 600px;
     right: 1;
     left: 1;
     bottom: 1;
