@@ -1,4 +1,4 @@
-1body {
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -17,7 +17,7 @@
 video {
     position: fixed;
     width: 105%;
-    height: 1000%;
+    height: 100%;
     right: -20;
     bottom: 50px;
     top: 0px;
