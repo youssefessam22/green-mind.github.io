@@ -5,95 +5,178 @@ body {
     background-color: black;
 }
 
-.ban {
+.background {
+    background-image: url('videos/best-2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* To place the video behind other elements */
-}
-
-video {
-    position: fixed;
-    width: 105%;
-    height: 90%;
-    right: -20;
-    top: 80px;
+    background-size: 90%;
+    z-index: 0; /* Changed from -1 to 0 */
 }
 
 .navbar {
     display: inline-flex;
-    align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for the navbar */
     color: white;
+    position: relative;
+    z-index: 1; /* Added z-index to keep the navbar above the background */
 }
+
 
 .logo {
     max-width: 100px;
+    height: 90px;
 }
 
 .navbar ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
 }
 
 .navbar li {
-    margin-right: 20px;
-    direction: ltr;
+    margin-right: 10px;
 }
 
 .navbar a {
     padding-right: 20px;
     text-decoration: none;
-    color: #fff;
+    color: green;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    display: inline-flex;
     font-size: 50px;
-    -webkit-text-stroke: 2px ;
 }
 
 .content {
     position: relative;
-    z-index: 1; /* To place the content above the video */
     text-align: center;
     color: white;
+    padding: 100px 0;
 }
 
 .content h1 {
-    position: fixed;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
-    top: 80px;
-    right: -0px;
-    left:-0;
     align-items: center;
+    position: fixed;
+    top: 80px;
+    left:  255px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.content span{
+.content span {
     color: green;
 }
 
 button {
-    position: fixed;
-    top: 570px;
-    right: 1;
-    left: 1;
-    bottom: 1;
-    margin-left: -90px;
-    align-items: center;
     border-radius: 7px;
-    width: 200px;
-    height: 70px;
-    font-size: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
     background-color: green;
+    position: fixed;
+    max-width: 200px;
+    left: 563px;
     color: white;
+    cursor: pointer;
+    max-height: 200px;
+    min-height: 100px;
+    top: 550px;
 }
 
 button:hover {
     background-color: rgb(0, 192, 226);
-    color: #fff;
     transition: 0.6s;
+}
+
+
+hr {
+    position: absolute;
+    width: 36cm;
+    height: 100px;
+    bottom:100px;
+    top: 10px;
+
+}
+
+
+.navbar .Light-mode {
+    position: relative;
+    display: inline-flex;
+    left:520px;
+    color: white;
+}
+
+@media screen and (max-width:412px ) {
+
+    body {
+
+        overflow: hidden;
+    }
+    hr{
+        position: fixed;
+        overflow: hidden;
+        height: 150px;
+        color: aliceblue;
+        width: 410px;
+
+    }
+
+    .content h1{
+        font-size: 25px;
+        position: fixed;
+        left: auto;
+        align-items: center;
+        top: 150px;
+        bottom: 0px;
+    
+
+    }
+    button{
+        position: fixed;
+        align-items: center;
+        height: 30px;
+        top: 600px;
+        bottom: 400px;
+        right: 10px;
+        left: 100px;
+
+
+    }
+
+    .navbar {
+        position: fixed;
+        font-size: 20px;
+        
+    }
+
+    .logo{
+        
+        height: 140px;
+    }
+    .background{
+        background-image: url('videos/best-2.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0px;
+        left: -0px;
+        bottom: 30px;
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        z-index: 0; /* Changed from -1 to 0 */
+    }
+    .navbar .Light-mode{
+        visibility: hidden;
+    }
+
 }
