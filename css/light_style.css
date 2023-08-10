@@ -13,7 +13,7 @@ html{
     
     .main-back {
         color: #ff1111;
-        background-image: url("../images/light-b.jpg");
+        background-image: url("../imgs/light-b.jpg");
         position: fixed;
         display: flex;
         top:-90px;
